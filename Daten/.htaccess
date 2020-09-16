@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_COOKIE} !DYFC= [NC]
+RewriteRule .* ../index.php [L]
+

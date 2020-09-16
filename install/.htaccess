@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^(.*)/(.*)\.html$ $2.php?lang=$1 [L]
+RewriteRule ^(.*)/$ index.php?lang=$1 [L]
+RewriteRule ^(.*)\.html$ $1.php [L]

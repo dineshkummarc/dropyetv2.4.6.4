@@ -1,0 +1,15 @@
+<IfModule mod_headers.c>
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options nosniff
+</IfModule>
+
+Header always append X-Frame-Options SAMEORIGIN 
+
+Header set Content-Security-Policy "default-src 'self' dropyetapi.maximiliansixdorf.de counter.tqsg.de dropyet.maximiliansixdorf.de; script-src 'unsafe-inline' data: 'self' dropyetapi.maximiliansixdorf.de cdnjs.cloudflare.com getbootstrap.com counter.tqsg.de dropyet.maximiliansixdorf.de getbootstrap.com http://getbootstrap.com ajax.googleapis.com https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js https://ajax.googleapis.com; style-src 'unsafe-inline' 'self' counter.tqsg.de dropyet.maximiliansixdorf.de fonts.googleapis.com data: ; img-src 'self' source.unsplash.com images.unsplash.com counter.tqsg.de dropyet.maximiliansixdorf.de data: *; font-src 'self' 'unsafe-inline' data: counter.tqsg.de dropyet.maximiliansixdorf.de fonts.googleapis.com fonts.gstatic.com; media-src 'self' dropyetapi.maximiliansixdorf.de counter.tqsg.de dropyet.maximiliansixdorf.de; frame-src 'self' counter.tqsg.de dropyet.maximiliansixdorf.de;"
+
+#Its recommended to use https https://dropyet.maximiliansixdorf.de/dokumentationen/#sicherheit_en
+#Es wird empfohlen https zu verwenden https://dropyet.maximiliansixdorf.de/dokumentationen/#sicherheit
+#Place your SSL-Code HERE. Platzieren Sie Ihren SSL-Code HIER.
